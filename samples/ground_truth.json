@@ -1,0 +1,14 @@
+{
+  "source": "SYNTHETIC",
+  "raw_findings": 5,
+  "unique_findings": 4,
+  "duplicates": 1,
+  "evidence_valid": 3,
+  "evidence_missing": 1,
+  "normal_sample": {
+    "path": "demo.py",
+    "line": 13,
+    "expected_alerts": 0
+  },
+  "warning": "人工构造告警，不代表真实扫描器检测或模型能力"
+}

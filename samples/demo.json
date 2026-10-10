@@ -1,0 +1,50 @@
+{
+  "source": "SYNTHETIC",
+  "findings": [
+    {
+      "rule_id": "sql-string",
+      "category": "CWE-89",
+      "severity": "high",
+      "path": "demo.py",
+      "line": 3,
+      "message": "字符串拼接形成查询",
+      "tool": "TeachingScanner-A"
+    },
+    {
+      "rule_id": "query-concat",
+      "category": "CWE-89",
+      "severity": "error",
+      "path": "demo.py",
+      "line": 3,
+      "message": "同一查询的重复告警",
+      "tool": "TeachingScanner-B"
+    },
+    {
+      "rule_id": "html-concat",
+      "category": "CWE-79",
+      "severity": "medium",
+      "path": "demo.py",
+      "line": 7,
+      "message": "未编码的字符串进入 HTML",
+      "tool": "TeachingScanner-A"
+    },
+    {
+      "rule_id": "yaml-unsafe",
+      "category": "CWE-502",
+      "severity": "high",
+      "path": "demo.py",
+      "line": 10,
+      "message": "使用非安全 YAML Loader",
+      "tool": "TeachingScanner-A"
+    },
+    {
+      "rule_id": "missing-evidence",
+      "category": "CWE-89",
+      "severity": "low",
+      "path": "absent.py",
+      "line": 9,
+      "message": "缺失文件，用于验证拒答",
+      "tool": "TeachingScanner-A"
+    }
+  ]
+}
